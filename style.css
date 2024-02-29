@@ -4,20 +4,59 @@
 :root {
     --icon-color: rgb(0, 176, 146);
     --primary-background-color: #fafbffd7;
-    --font-color: rgb(24, 24, 24);
-    --main-font: DM Sans, sans serif;
+    --primary-font-color: rgb(24, 24, 24);
+    --secondary-font-color: rgb(26, 26, 26);
+    --primary-font: DM Sans, sans serif;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    color: var(--primary-font-color);
+    font-family: var(--primary-font);
 }
 
+html{
+    font-size: 20px;
+}
+
+/*Main page header*/
+
+header {
+    color: var(--secondary-font-color);
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 0.8rem;
+}
+
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+a .log-in {
+    height: 30px;
+    width: 60px;
+    border: solid 1px var(--secondary-font-color);
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+
+/*Trustpilot comments*/
+
 section {
-    font-family: var(--main-font);
+    font-family: var(--primary-font);
     background-color: white;
-    color: var(--font-color);
+    color: var(--primary-font-color);
     padding: 60px;
     display: flex;
     flex-wrap: nowrap;
@@ -51,9 +90,12 @@ div {
 }
 
 .bi-star-fill {
-    font-size: 24px;
+    font-size: 1.2rem;
 }
 
 p {
     height: 150px;
+    color: var(--secondary-font-color);
+    font-size: 0.8rem;
 }
+

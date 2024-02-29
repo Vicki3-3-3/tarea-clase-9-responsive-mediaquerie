@@ -27,6 +27,7 @@ html {
 header {
     color: var(--secondary-font-color);
     height: 100px;
+    padding: 30px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -41,11 +42,6 @@ nav {
     gap: 20px;
 }
 
-a .log-in {
-    height: 30px;
-    width: 60px;
-    border: solid 1px var(--secondary-font-color);
-}
 
 nav a:hover {
     opacity: 0.7;
@@ -105,11 +101,11 @@ p {
 
 @media screen and (max-width: 1024px) {
 
-    html{
+    html {
         font-size: 16px;
     }
-    
-    header{
+
+    header {
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
@@ -121,10 +117,11 @@ p {
         display: none;
     }
 
-    .navigation-section {
+    header nav .navigation-section {
         display: flex;
     }
 
-
 }
 
+/*AGREGAR OTRO MEDIA QUERIA A LOS 500PX, NUEVO DISENO DE LA PAGINA
+NO APARECE IMAGEN LUEGO DE 1024 PX CORREGIR*/

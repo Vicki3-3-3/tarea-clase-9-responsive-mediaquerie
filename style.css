@@ -121,6 +121,35 @@ p {
         display: flex;
     }
 
+    article {
+        height: 200px;
+        width: 200px;
+    }
+
+    p {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    html{
+        font-size: 15px;
+    }
+
+    article {
+        height: 200px;
+        width: 150px;
+    }
+    
+    p {
+        height: 90px;
+    }
+
+    header img {
+        width: 90px;
+    }
+
 }
 
 /*AGREGAR OTRO MEDIA QUERIA A LOS 500PX, NUEVO DISENO DE LA PAGINA
